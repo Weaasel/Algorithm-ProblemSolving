@@ -1,4 +1,6 @@
-//
+//연구소
+//Simple BFS
+
 #include <iostream>
 #include <cstdio>
 #include <math.h>
