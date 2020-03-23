@@ -1,4 +1,6 @@
 //합이 0인 네 정수
+//Binary search, Hashing
+
 #include <iostream>
 #include <cstdio>
 #include <math.h>
