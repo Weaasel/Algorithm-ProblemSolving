@@ -1,4 +1,6 @@
 //트리의 지름
+//BFS twice
+
 #include <iostream>
 #include <cstdio>
 #include <math.h>
