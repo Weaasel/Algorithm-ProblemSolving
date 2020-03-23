@@ -1,4 +1,6 @@
 //돌멩이 제거
+//Vertex Cover, Bipartite matching
+
 #include <iostream>
 #include <cstdio>
 #include <math.h>
