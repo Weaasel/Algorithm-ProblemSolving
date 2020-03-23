@@ -1,5 +1,5 @@
 //1로 만들기
-//
+//DFS-like DP
 
 #include <iostream>
 #include <cstdio>
