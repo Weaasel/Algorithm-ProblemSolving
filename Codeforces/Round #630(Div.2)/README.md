@@ -9,8 +9,8 @@
   * G. No Monotone Triples
   
 ## Result
-  * Point : 4 solved in 7
-  * Rank : 1370
-  * Rating Change : +73
+  * Point : **4** solved in **7**
+  * Rank : **1370**
+  * Rating Change : **+73**
 
 <img src="https://github.com/Weaasel/PS_algorithm/blob/master/Codeforces/Round%20%23630(Div.2)/_Codeforces_Round630_Div2.png?raw=true" width="900">
