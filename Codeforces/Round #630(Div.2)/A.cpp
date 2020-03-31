@@ -1,3 +1,5 @@
+//A. Exercising Walk
+
 #include <iostream>
 #include <cstdio>
 #include <math.h>
