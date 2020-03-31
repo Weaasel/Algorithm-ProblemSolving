@@ -1,5 +1,5 @@
 //역사
-//DAG, Topological sort
+//Graph, Floyd-warshall
 
 #include <iostream>
 #include <cstdio>
