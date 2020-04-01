@@ -7,7 +7,7 @@
   이 edge들을 가지고 MST를 만들었을 때 모든 u,v 쌍에 대해 max edge cost를 minimize 할 수 있다는 것을 증명할 수 있다.
     귀류법. if another path exists: MST를 만들 때 그 edge가 먼저 포함되었어야 함.
   
-  주의할 점은 출발점과 도착점이 같은 경우에 자기 자신의 높이를 출력해야 한다는 점.
+  주의할 점은 출발점과 도착점이 같은 경우에 자기 자신의 높이를 출력해야 한다는 점이다.
 */
 
 #include <iostream>
