@@ -9,7 +9,7 @@
   
 ## Result
   * Point : **2** solved in **6**
-  * Rank : **-**
-  * Rating Change : **-**
+  * Rank : **5190**
+  * Rating Change : **-55**
 
 <img src="https://github.com/Weaasel/PS_algorithm/blob/master/Codeforces/Round%20%23632(Div.2)/_Codeforces_Round632_Div2.png?raw=true" width="900">
