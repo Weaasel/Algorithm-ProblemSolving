@@ -1,5 +1,14 @@
 // C - Linova and Kingdom	
 
+/*
+일단 그리디하게 어떤 노드를 industry로 선택하려면 그 노드의 child들은 이미 다 선택된 상태여야 한다. 따라서 나를 선택한다는 얘기는	
+나로부터 root까지 가는길에 방문하는 tourism 수(lev[i]) - 내가 tourism에서 industry로 바뀜으로서 내 child들의 path상에 1개씩 손해(childs[i])
+가 된다.
+  => happiness[i] = lev[i] - childs[i];
+따라서 이것들을 전처리해놓고 happiness가 높은순으로 sort하여 k개만큼 선택하면 된다..
+코드상에 dfs식으로 구현한 것은 그냥 연습삼아 한 것이다.
+*/
+
 #include <iostream>
 #include <cstdio>
 #include <math.h>
