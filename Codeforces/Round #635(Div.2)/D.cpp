@@ -1,5 +1,23 @@
 // D - Xenia and Colorful Gems	
 
+/*
+목적은 l, m, r 세 수를 각 집합에서 뽑았을 때,
+(l-m)^2 + (m-r)^2 + (l-r)^2 을 minimize하고 싶다. 즉 l, m, r이 옹기종기 모여있는 것이 가장 optimal일 것으로 보인다. 
+
+3개의 집합에 대해서 loop를 돌릴거고, 어떤 한 수를 mid로 잡았을 때, 나머지 두 집합에서
+left <= mid <= right가 되는 mid와 가장 가까운 left, right를 얻을 수 있도록 뽑을 것이다.
+
+left는 한 집합에서 mid에 대해 lower_bound를 때리고,
+그랬을 때 나올 수 있는 3가지 경우의 수(mid와 같은, vector.end(), mid보다 큰) 에 대해서
+적절히 처리해준다. (뒤의 두 경우에 대해서만 left--)
+
+right는 나머지 한 집합에서 mid에 대해 upper_bound를 때리고,
+나올 수 있는 2가지 경우의 수(mid 초과, vector.end()) 에 대해서
+적절히 처리해준다. (vector.end()이거나 vector[r-1] == mid면 r--)
+
+이렇게 하고 l, r이 모두 0 이상이어야 valid한 경우이므로 이때만 처리해 준다.
+*/
+
 #include <iostream>
 #include <cstdio>
 #include <math.h>
