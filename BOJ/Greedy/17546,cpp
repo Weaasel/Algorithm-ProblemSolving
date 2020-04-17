@@ -1,0 +1,51 @@
+//
+/*
+Beautiful한 문제. m개의 edges중 m/2개 이하를 지워 그래프를 acyclic하게 만들어야 한다.
+(u,v)로 표현되는 각 edge들을 u < v. v > u 인 두개의 그룹으로 나눠 그 중 개수가 더 작은 하나를
+전부 지우면 된다.
+*/
+
+#include <iostream>
+#include <cstdio>
+#include <math.h>
+#include <cstring>
+#include <string>
+#include <algorithm>
+#include <vector>
+#include <stack>
+#include <queue>
+#include <deque>
+#include <set>
+#include <map>
+#define pb push_back
+#define ll long long
+#define pii pair<int, int>
+#define pll pair<ll, ll>
+#define all(v) (v).begin(),(v).end()
+#define MAX 4001
+#define DIV 100000LL
+#define INF 2000000000
+
+using namespace std;
+
+int n, m, u, v;
+vector<int> a, b;
+int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(0);
+	cin >> n >> m;
+	for (int i = 1; i <= m; i++) {
+		cin >> u >> v;
+		if (u < v) a.pb({i});
+		else b.pb(i);
+	}
+	if (a.size() > b.size()) {
+		cout << b.size() << "\n";
+		for (int i : b) cout << i << "\n";
+	}
+	else {
+		cout << a.size() << "\n";
+		for (int i : a) cout << i << "\n";
+	}
+	return 0;
+}
