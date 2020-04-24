@@ -1,0 +1,36 @@
+//A. Nastya and Rice
+
+#include <iostream>
+#include <math.h>
+#include <cstring>
+#include <string>
+#include <algorithm>
+#include <vector>
+#include <stack>
+#include <queue>
+#include <deque>
+#include <set>
+#include <map>
+#define pb push_back
+#define ll long long
+#define pii pair<int, int>
+#define pll pair<ll, ll>
+#define MAX 4001
+#define DIV 100000LL
+#define INF 2000000000
+
+using namespace std;
+int T, n, a, b, c, d;
+
+int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(0);
+	cin >> T;
+	while (T--) {
+		cin >> n >> a >> b >> c >> d;
+		if (n * (a - b) > c + d) cout << "NO\n";
+		else if (n * (a + b) < c - d) cout << "NO\n";
+		else cout << "YES\n";
+	}
+	return 0;
+}
