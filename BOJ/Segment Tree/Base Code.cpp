@@ -1,4 +1,6 @@
-//구간 합 세그트리
+//구간 합 세그트리 기준.
+//index : 1 ~ n
+//기본적인 4개의 함수(init, update, query, find)를 구현해 놓았음.
 
 #include <iostream>
 #include <algorithm>
