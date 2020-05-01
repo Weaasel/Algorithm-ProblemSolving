@@ -6,9 +6,10 @@
   
   재미있는 observation은 (x,y) 점들에 대해 x에 대해 오름차순, y에 대해 내림차순으로 정렬하고 나면,
   가장 긴 증가하는 부분수열의 길이/가짓수를 구하는 문제와 같아진다.
+  
+  + 좌표압축은 덤. 간편하게 map을 사용해도 시간 문제는 없었다.
 */
 
-//minimum seg tree
 #include <iostream>
 #include <math.h>
 #include <cstring>
