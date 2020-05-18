@@ -7,8 +7,8 @@
   * D. Multiset
   
 ## Result
-  * Point : **5** solved in **8**
+  * Point : **3** solved in **8**
   * Rank : **2642**
   * Rating Change : **-42**
 
-<img src="https://github.com/Weaasel/PS_algorithm/blob/master/Codeforces/Educational%20Codeforces%20Round%2387(Div.2)/_Codeforces_Round86_Div2.png?raw=true" width="900">
+<img src="https://github.com/Weaasel/PS_algorithm/blob/master/Codeforces/Educational%20Codeforces%20Round%2387(Div.2)/_Codeforces_Round87_Div2.png?raw=true" width="900">
