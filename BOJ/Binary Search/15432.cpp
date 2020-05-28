@@ -3,7 +3,10 @@
 
 /*
   주어진 식의 값이 monotone increase 하다는 것을 수학적으로 증명하고,
-  해당 값을 찾기 위해 binary search 하는 
+  해당 값을 찾기 위해 binary search 하는 문제였다.
+  
+  만약 이렇게 monotone increase하지 않고, 어떤 극값을 가지는 경우에는
+  ternary search를 한다고 알고 있다.
 */
 
 #include <iostream>
