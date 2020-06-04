@@ -1,5 +1,5 @@
 # [Codeforces](https://codeforces.com/)
 
-## Valid Handles
+## Handle
   * [weasell](https://codeforces.com/profile/weasell)
   * [wease1](https://codeforces.com/profile/wease1)
