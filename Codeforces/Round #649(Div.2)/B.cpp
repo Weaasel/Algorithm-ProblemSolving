@@ -1,4 +1,9 @@
 //B - Most socially-distanced subsequence	
+/*
+  그냥 답은 언제나 일정하고,
+  개수를 줄이는 느낌으로 가야한다.
+  증가구간일때 중간값들을 지우고, 감소구간일 때 역시 중간값들을 지운다.
+*/
 
 #include <iostream>
 #include <math.h>
