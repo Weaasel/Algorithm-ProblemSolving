@@ -39,6 +39,7 @@ int main() {
 		cin >> s;
 		cin >> m;
 		memset(res, 0, sizeof(res));
+		memset(cnt, 0, sizeof(cnt));
 		for (int i = 0; i < m; i++) cin >> b[i];
 		for (int i = 0; i < s.size(); i++) {
 			cnt[s[i] - 'a']++;
