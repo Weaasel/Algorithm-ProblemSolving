@@ -8,4 +8,4 @@
   * Rank : **519**
   * Rating Change : **+46**
 
-<img src="https://github.com/Weaasel/PS_algorithm/blob/master/Codeforces/Round%20%23651(Div.2)/_Codeforces_Round651_Div2.png?raw=true" width="700">
+<img src="https://github.com/Weaasel/PS_algorithm/blob/master/Codeforces/Round%20%23651(Div.2)/_Codeforces_Round651_Div2_purple.png?raw=true" width="700">
