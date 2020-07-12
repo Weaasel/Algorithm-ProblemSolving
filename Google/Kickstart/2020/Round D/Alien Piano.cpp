@@ -19,28 +19,42 @@
 const ll DIV = 1e9 + 7;
 using namespace std;
 
-int T, n;
-int a[10001], val[10001];
+int T, n, num;
 
 int main() {
 	ios::sync_with_stdio(false); cin.tie(0);
 	cin >> T;
 	for (int tc = 1; tc <= T; tc++) {
 		cin >> n;
-		memset(val, 0, sizeof(val));
-		for (int i = 0; i < n; i++) cin >> a[i];
-		int mn = 0, mx = 0, cnt = 0;
-		for (int i = 1; i < n; i++) {
-			if (a[i] > a[i - 1]) val[i] = val[i - 1] + 1;
-			else if (a[i] < a[i - 1]) val[i] = val[i - 1] - 1;
-			else val[i] = val[i - 1];
-			mn = min(mn, val[i]);
-			mx = max(mx, val[i]);
-			if (mx - mn < 4) continue;
-			else {
-				cnt++;
-				val[i] = 0, mn = 0, mx = 0;
+		vector<int> a;
+		for (int i = 0; i < n; i++) {
+			cin >> num;
+			if (a.empty() || a[a.size() - 1] != num) a.pb(num);
+		}
+		int cnt = 0;
+		n = a.size();
+
+		for (int i = 0; i < n - 4;) {
+			bool f = true;
+			for (int j = 0; j < 4; j++) {
+				if (a[i + j] < a[i + j + 1]) f = false;
 			}
+			if (f) {
+				cnt++;
+				i += 4;
+			}
+			else i++;
+		}
+		for (int i = 0; i < n - 4;) {
+			bool f = true;
+			for (int j = 0; j < 4; j++) {
+				if (a[i + j] > a[i + j + 1]) f = false;
+			}
+			if (f) {
+				cnt++;
+				i += 4;
+			}
+			else i++;
 		}
 		cout << "Case #" << tc << ": " << cnt << "\n";
 	}
