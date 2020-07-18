@@ -1,7 +1,7 @@
 //D - a-Good String	
 //Divide and Conquer, DP, Bitmask
 /*
-  dp[pow][char][start] : 알파벳 char로 start부터 2^pow 개의 구간을 채우기 위한 비용
+  dp[pow][char][start] : 알파벳 char로 start부터 2^pow 개의 구간을 'char'-good string으로 만들기 위한 비용
   으로 정의하고,
   dp[pow][char][start] = min(dp[pow-1][char+1][start] + (start+2^(pow-1) ~ start+2^pow 구간을 char로 채우는 비용),
                             dp[pow-1][char+1][start] + (start+2^(pow-1) ~ start+2^pow 구간을 char로 채우는 비용))
