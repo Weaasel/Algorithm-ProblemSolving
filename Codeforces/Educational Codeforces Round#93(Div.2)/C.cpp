@@ -1,4 +1,5 @@
 //C - Good Subarrays	
+//Thinking, hashmap, line sweeping
 /*
   psum[r] - psum[l-1] = r - l + 1 인 (r,l) 쌍의 개수를 찾는 문제로,
   psum[r] - r = psum[l-1] - (l-1) 로 식을 변형하면
