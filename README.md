@@ -1,4 +1,5 @@
-# PS_algorithm
+# Algorithm-ProblemSolving
+
   * Store my algorithm ps sources.
   * BOJ, Codeforces, Google contests, LeetCode are online judge web-sites.
   * I'll write down key idea/algorithm for each problem on the top of sources.
