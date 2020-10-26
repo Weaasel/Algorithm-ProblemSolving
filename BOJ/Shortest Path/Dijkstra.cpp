@@ -37,5 +37,9 @@ int main() {
 		adj[u].pb({ v,c });
 	}
 	dijkstra(s);
-  return 0;
+	for (int i = 1; i <= n; i++) {
+		if (dist[i] == INF) cout << "INF\n";
+		else cout << dist[i] << "\n";
+	}
+	return 0;
 }
