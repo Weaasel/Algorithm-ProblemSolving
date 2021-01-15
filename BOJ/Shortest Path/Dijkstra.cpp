@@ -1,9 +1,10 @@
-#include <algorithm>
-#include <vector>
-#include <queue>
+#include <bits/stdc++.h>
 #define pb push_back
 #define pii pair<int, int>
-#define INF 1e+9 + 7
+
+const int INF = 1e9+7;
+
+using namespace std;
 
 int n, m, s;
 int dist[20202];
@@ -19,7 +20,7 @@ void dijkstra(int s) {
 		if (dist[cur] < curd) continue;
 		for (pii np : adj[cur]) {
 			int nxt = np.first, d = np.second;
-			if (dist[nxt] < curd + d) continue;
+			if (dist[nxt] <= curd + d) continue;
 			dist[nxt] = curd + d;
 			pq.push({ -dist[nxt],nxt });
 		}
