@@ -3,10 +3,23 @@
 
 using namespace std;
 
+vector<ll> prime;
+bool notp[40101];
+
+/*
+   eratosthenes's seive for 1e9
+*/
+void era() {
+	for (int i = 2; i*i < 40101; i++) {
+		if (notp[i]) continue;
+		for (int j = i * i; j < 40101; j += i) notp[j] = true;
+	}
+	for (int i = 2; i < 40101; i++) if (!notp[i]) prime.pb(i);
+}
+
 /*
    Euler Phi function: n 이하의 n과 서로소인 수의 개수
 */
-vector<ll> prime;
 ll euler(ll n) {
    ll ret = 1;
    for (ll p : prime) {
