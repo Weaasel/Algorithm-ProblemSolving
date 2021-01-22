@@ -35,3 +35,27 @@ ll euler(ll n) {
    if (n != 1) ret *= (n - 1);
    return ret;
 }
+
+/*
+  mobius inversion
+*/
+int mobius[mx];
+void init() {
+    fill(mobius, mobius+mx, 1);
+    //memset(mobius, 1, sizeof(mobius));
+    for (int i = 2; i * i <= mx; i++)
+        if (mobius[i] == 1) { //prime들에 대해
+            for (int j = i; j <= mx; j += i) mobius[j] *= -i;
+            for (int j = i * i; j <= mx; j += i * i) mobius[j] = 0;
+        }
+
+    for (int i = 2; i <= mx; i++) {
+        if (mobius[i] == i) mobius[i] = 1;
+        else if (mobius[i] == -i) mobius[i] = -1;
+        else if (mobius[i] < 0) mobius[i] = 1;
+        else if (mobius[i] > 0) mobius[i] = -1;
+    }
+
+}
+
+
