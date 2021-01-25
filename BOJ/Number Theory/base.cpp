@@ -18,6 +18,46 @@ void era() {
 }
 
 /*
+  num의 약수들의 집합을 return
+*/
+vector<int> get_divs(int num){
+	vector<pii> d;
+	for (int p : prime) {
+		if (num%p == 0) {
+			int cnt = 0;
+			while (num%p == 0) {
+				num /= p;
+				cnt++;
+			}
+			d.pb({ p,cnt });
+		}
+	}
+	if (num > 1) d.pb({ num,1 });
+	
+	vector<int> divs;
+	int sz = d.size();
+	for (pii p : d) {
+		int val = p.x, cnt = p.y;
+		int dsz = divs.size();
+		for (int j = 0; j < dsz; j++) {
+			int cur = divs[j], vv = val;
+			for (int k = 0; k < cnt; k++) {
+				divs.pb({ cur*vv });
+				vv *= val;
+			}
+		}
+		int vv = val;
+		for (int k = 0; k < cnt; k++) {
+			divs.pb({ vv });
+			vv *= val;
+		}
+	}
+	divs.pb(1);
+	return divs;
+}
+
+
+/*
    Euler Phi function: n 이하의 n과 서로소인 수의 개수
 */
 ll euler(ll n) {
